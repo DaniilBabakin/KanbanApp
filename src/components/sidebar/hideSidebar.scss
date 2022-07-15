@@ -1,0 +1,47 @@
+.hide {
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 30px;
+  left: 1.5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  width: 100%;
+
+  &__icon {
+    z-index: 1;
+
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+
+    stroke: #b5b5b5;
+  }
+
+  &__text {
+    user-select: none;
+
+    position: absolute;
+    z-index: 0;
+    transform: translateX(40px);
+
+    width: 300px;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: #b6bac2;
+
+    transition: 0.2s ease all;
+  }
+}
+
+.sidebar.hidden .hide {
+  &__text {
+    transform: translateX(-100px);
+
+    opacity: 0;
+  }
+}

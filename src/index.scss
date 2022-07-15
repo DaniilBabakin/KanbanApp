@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body[data-theme='dark'] {
+  --colors-text: hsl(0deg 0% 100%);
+  --colors-bg: #1c1c27;
+  --colors-sidebar-bg: #30303c;
+
+  // IMAGES LINKS
+  --logo: url('./assets/logo.png');
+  --desk-icon: url('./assets/deskIcon.png');
+
+  // SHADOWS
+  --sidebar-shadow: 3px 1px 4px 0 #fffcfc40;
+  --topmenu-shadow: 2px 1px 4px 2px #fffcfc40;
+  --colors-ui-base: hsl(209deg 23% 22%);
+  --shadow: rgb(245 245 245 / 20%) 0 0 8px;
+}
+
+body[data-theme='light'] {
+  --colors-text: hsl(200deg 15% 8%);
+  --colors-bg: #e3e3fc;
+  --colors-sidebar-bg: rgb(247 250 255);
+
+  // IMAGES LINKS
+  --logo: url('./assets/logo-light.png');
+  --desk-icon: url('./assets/deskIcon-light.png');
+
+  // SHADOWS
+  --sidebar-shadow: 3px 1px 4px 0 #4e4e4e40;
+  --topmenu-shadow: 2px 1px 4px 2px #44444440;
+  --colors-ui-base: hsl(0deg 0% 100%);
+  --shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+}
+
+body {
+  overflow-x: hidden;
+
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: Inter, sans-serif;
+  color: var(--colors-text);
+
+  background-color: var(--colors-bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

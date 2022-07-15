@@ -1,0 +1,49 @@
+.todoColumn {
+  width: 400px;
+  height: 90%;
+  margin-top: 30px;
+  margin-left: 130px;
+
+  &:not(:first-child) {
+    margin-left: 35px;
+  }
+
+  &__title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 22px;
+    font-weight: 300;
+    color: #cdcdcd;
+
+    &__circle {
+      width: 30px;
+      height: 30px;
+
+      background-color: #67cedc;
+      border-radius: 50%;
+      box-shadow: 0 0 3px 0 #67cedc;
+    }
+  }
+
+  &__todo {
+    margin-bottom: 20px;
+    padding: 15px 30px;
+
+    background-color: var(--colors-sidebar-bg);
+    border-radius: 24px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &__text {
+      font-size: 16;
+      font-weight: 300;
+      color: #a4a5bd;
+    }
+  }
+}
